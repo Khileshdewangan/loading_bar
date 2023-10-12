@@ -1,0 +1,29 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.circle{
+    height: 200px;
+    width: 200px;
+    margin: 150px;
+    border-radius: 50%;
+    border: 15px solid black;
+    background-color: rgb(204, 204, 243);
+    border-top-color:red;
+    border-right-color: yellow;
+    border-bottom-color: blue;
+    border-left-color: green;
+    animation: spin 0.9s linear infinite;
+}
+
+@keyframes spin{
+    0%{
+        transform: rotate(0deg);
+    }
+     100%{
+        transform: rotate(360deg);
+    }
+}

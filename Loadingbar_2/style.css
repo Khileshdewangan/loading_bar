@@ -1,0 +1,20 @@
+body{
+    margin: 100px;
+    padding: 100px;
+}
+.loading{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: 10px solid rgb(217, 214, 230);
+    border-top-color: rgb(61, 61, 177);
+    animation: move 1.5s infinite ; /* linear */
+}
+@keyframes move{
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}

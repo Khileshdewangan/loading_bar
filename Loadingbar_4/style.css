@@ -1,0 +1,48 @@
+body{
+    margin: 100px;
+}
+.spiner{
+    display: flex;
+    justify-content: space-evenly;
+    width: 150px;
+    height: 100px;
+    border: 5px solid transparent;
+    /* background-color: mediumspringgreen; */
+}
+.spiner div {
+    width: 15px;
+    background-color: red;
+    animation: load 1s infinite;
+
+}
+
+@keyframes load{
+    0%{
+        transform: scaleY(0.4);
+    }
+    40%{
+        transform:  scaleY(0.4);
+    }
+    100%{
+        transform:  scaleY(0.4);
+    }
+    20%{
+        transform:  scaleY(1);
+    }
+}
+
+.spiner .shape1{
+    animation-delay: -1s;
+}
+.spiner .shape2{
+    animation-delay: -0.9s;
+}
+.spiner .shape3{
+    animation-delay: -0.8s;
+}
+.spiner .shape4{
+    animation-delay: -0.7s;
+}
+.spiner .shape5{
+    animation-delay: -0.6s;
+}
